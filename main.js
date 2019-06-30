@@ -23,7 +23,7 @@ module.exports.loop = function () {
             console.log('Deleting non-existing creep memory: ', name);
         }
     }
-    ensure_creep_numbers('worker', 2)
+    ensure_creep_numbers('worker', 4)
     for(var name in Game.creeps) {
         var creep = Game.creeps[name];
         if(creep.memory.role == 'worker') {
